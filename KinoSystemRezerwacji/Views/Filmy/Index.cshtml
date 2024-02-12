@@ -1,0 +1,14 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model List<KinoSystemRezerwacji.Models.Film>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<h1>Filmy:</h1>
+<ul>
+    @foreach (var film in Model)
+    {
+        <li>@Html.ActionLink(film.Tytul, "Show", "Filmy", new { id = film.Id })</li>
+    }
+</ul>
+<a href="@Url.Action("Search", "Filmy")" class="btn btn-primary">Powrót do wyszukiwania</a>

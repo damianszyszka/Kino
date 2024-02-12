@@ -1,110 +1,44 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using KinoSystemRezerwacji.Models;
+﻿using KinoSystemRezerwacji.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-[Route("api/[controller]")]
-[ApiController]
-public class FilmyController : ControllerBase
+
+namespace KinoSystemRezerwacji.Controllers
 {
-    private readonly CinemaContext _context;
 
-    public FilmyController(CinemaContext context)
+    public class QueryParameters
     {
-        _context = context;
+        public string Search { get; set; } = "";
     }
 
-    // GET: api/Filmy
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Film>>> GetFilmy()
+    public class FilmyController : Controller
     {
-        return await _context.Filmy.ToListAsync();
-    }
+        private readonly CinemaContext _context;
 
-    // GET: api/Filmy/5
-    [HttpGet("{id}")]
-    public async Task<ActionResult<Film>> GetFilm(int id)
-    {
-        var film = await _context.Filmy.FindAsync(id);
-        if (film == null)
+        public FilmyController(CinemaContext context)
         {
-            return NotFound();
-        }
-        return film;
-    }
-    // GET: api/Filmy/{id}/Seanse
-    [HttpGet("{id}/Seanse")]
-    public async Task<ActionResult<IEnumerable<Seans>>> GetSeanseForFilm(int id)
-    {
-        // Sprawdź, czy film istnieje
-        var filmExists = await _context.Filmy.AnyAsync(f => f.Id == id);
-        if (!filmExists)
-        {
-            return NotFound("Film nie został znaleziony.");
+            _context = context;
         }
 
-        // Pobierz seanse dla filmu
-        var seanse = await _context.Seanse
-                                   .Where(s => s.FilmId == id)
-                                   .ToListAsync();
-
-        return seanse;
-    }
-
-    // POST: api/Filmy
-    [HttpPost]
-    public async Task<ActionResult<Film>> PostFilm(Film film)
-    {
-        _context.Filmy.Add(film);
-        await _context.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetFilm), new { id = film.Id }, film);
-    }
-
-    // PUT: api/Filmy/5
-    [HttpPut("{id}")]
-    public async Task<IActionResult> PutFilm(int id, Film film)
-    {
-        if (id != film.Id)
+        public IActionResult Index()
         {
-            return BadRequest();
-        }
-        _context.Entry(film).State = EntityState.Modified;
-        try
-        {
-            await _context.SaveChangesAsync();
-        }
-        catch (DbUpdateConcurrencyException)
-        {
-            if (!FilmExists(id))
-            {
-                return NotFound();
-            }
-            else
-            {
-                throw;
-            }
-        }
-        return NoContent();
-    }
+            var filmy = _context.Filmy.ToList();
 
-    // DELETE: api/Filmy/5
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteFilm(int id)
-    {
-        var film = await _context.Filmy.FindAsync(id);
-        if (film == null)
-        {
-            return NotFound();
+            return View(filmy);
         }
-        _context.Filmy.Remove(film);
-        await _context.SaveChangesAsync();
-        return NoContent();
-    }
 
-    private bool FilmExists(int id)
-    {
-        return _context.Filmy.Any(e => e.Id == id);
+        public IActionResult Show(int id)
+        {
+            var film = _context.Filmy.Find(id);
+
+            return View(film);
+        }
+
+        public IActionResult Search([FromQuery] QueryParameters queryParameters)
+        {
+            var films = _context.Filmy.Where(f => EF.Functions.Like(f.Tytul, $"%{queryParameters.Search}%")).ToList();
+
+            return View(films);
+        }
     }
 }
-

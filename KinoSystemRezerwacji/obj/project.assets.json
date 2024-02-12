@@ -4439,11 +4439,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\kinogit\\kino\\KinoSystemRezerwacji\\KinoSystemRezerwacji.csproj",
+      "projectUniqueName": "C:\\Projects\\kinogit\\Kino\\KinoSystemRezerwacji\\KinoSystemRezerwacji.csproj",
       "projectName": "KinoSystemRezerwacji",
-      "projectPath": "C:\\Projects\\kinogit\\kino\\KinoSystemRezerwacji\\KinoSystemRezerwacji.csproj",
+      "projectPath": "C:\\Projects\\kinogit\\Kino\\KinoSystemRezerwacji\\KinoSystemRezerwacji.csproj",
       "packagesPath": "C:\\Users\\damia\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\kinogit\\kino\\KinoSystemRezerwacji\\obj\\",
+      "outputPath": "C:\\Projects\\kinogit\\Kino\\KinoSystemRezerwacji\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\VS\\VS_shared\\NuGetPackages"

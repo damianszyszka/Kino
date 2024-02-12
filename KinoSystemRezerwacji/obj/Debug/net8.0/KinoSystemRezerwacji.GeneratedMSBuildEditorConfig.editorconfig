@@ -18,8 +18,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Projects\kinogit\Kino\KinoSystemRezerwacji
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Filmy/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Filmy/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXlcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Filmy/Show.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXlcU2hvdy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Shared/_ValidationScriptsPartial.cshtml]

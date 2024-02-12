@@ -1,22 +1,39 @@
-html {
-  font-size: 14px;
+/* site.css */
+
+/* Równomierne rozmieszczenie elementów */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 72px;
-  }
+/* Stylowanie przycisku "Powrót do wyszukiwania" */
+.btn-primary {
+    margin-top: 1rem;
+    font-size: 16px; /* Dostosuj rozmiar czcionki */
+    padding: 0.5rem 1rem; /* Dostosuj odstêpy wewn¹trz przycisku */
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+/* Stylowanie tabeli */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+table th, table td {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
 }
 
-body {
-  margin-bottom: 60px;
+table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
 }
+
+/* Dodatkowe dostosowania stylów, np. t³a, czcionek itp. */
+/* Mo¿esz dostosowaæ te regu³y wed³ug w³asnych preferencji */
