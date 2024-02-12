@@ -9,43 +9,43 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = KinoSystemRezerwacji
 build_property.RootNamespace = KinoSystemRezerwacji
-build_property.ProjectDir = C:\Users\Norbert\Desktop\PROJEKTIOT\Kino\KinoSystemRezerwacji\
+build_property.ProjectDir = C:\Projects\kinogit\Kino\KinoSystemRezerwacji\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Norbert\Desktop\PROJEKTIOT\Kino\KinoSystemRezerwacji
+build_property.MSBuildProjectDirectory = C:\Projects\kinogit\Kino\KinoSystemRezerwacji
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Norbert/Desktop/PROJEKTIOT/Kino/KinoSystemRezerwacji/Views/Filmy/Index.cshtml]
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Filmy/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Norbert/Desktop/PROJEKTIOT/Kino/KinoSystemRezerwacji/Views/Filmy/Search.cshtml]
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Filmy/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXlcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Norbert/Desktop/PROJEKTIOT/Kino/KinoSystemRezerwacji/Views/Filmy/Show.cshtml]
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Filmy/Show.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXlcU2hvdy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Norbert/Desktop/PROJEKTIOT/Kino/KinoSystemRezerwacji/Views/Home/Index.cshtml]
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Norbert/Desktop/PROJEKTIOT/Kino/KinoSystemRezerwacji/Views/Home/Privacy.cshtml]
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Norbert/Desktop/PROJEKTIOT/Kino/KinoSystemRezerwacji/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Norbert/Desktop/PROJEKTIOT/Kino/KinoSystemRezerwacji/Views/_ViewStart.cshtml]
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Norbert/Desktop/PROJEKTIOT/Kino/KinoSystemRezerwacji/Views/Shared/_Layout.cshtml]
+[C:/Projects/kinogit/Kino/KinoSystemRezerwacji/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-tig3ob7maz

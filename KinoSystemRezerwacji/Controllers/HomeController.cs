@@ -1,12 +1,22 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using KinoSystemRezerwacji.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace KinoSystemRezerwacji.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly CinemaContext _context;
+
+        public HomeController(CinemaContext context)
+        {
+            _context = context;
+        }
+
         public IActionResult Index()
         {
-            return View();
+            var filmy = _context.Filmy.ToList();
+
+            return View(filmy);
         }
 
         public IActionResult Privacy()
